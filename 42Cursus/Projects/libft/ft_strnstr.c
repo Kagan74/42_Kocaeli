@@ -1,36 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kkarakur <kkarakur@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/05 13:27:08 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/06 08:37:14 by kkarakur         ###   ########.fr       */
+/*   Created: 2023/07/06 07:46:44 by kkarakur          #+#    #+#             */
+/*   Updated: 2023/07/06 07:56:00 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+char	*ft_strnstr(const char	*big, const char *little, size_t len)
 {
-	char	*destmov;
-	char	*srcmov;
 	size_t	i;
+	size_t	j;
 
-	if (!dest && !src)
-		return (NULL);
-	destmov = (char *)dest;
-	srcmov = (char *)src;
 	i = 0;
-	if (destmov > srcmov)
-		while (n--)
-			destmov[n] = srcmov[n];
-	else
+	if (len == 0 || ft_strncmp(little, "", 1) == 0)
+		return ((char *)big);
+	while (big[i] && i < len)
 	{
-		while (n--)
+		j = 0;
+		while (big[i + j] == little[j] && i + j < len)
 		{
-			destmov[i] = srcmov[i];
-			i++;
+			if (little[j + 1] == 0)
+				return ((char *)big + i);
+			j++;
 		}
+		i++;
 	}
-	return (destmov);
+	return (NULL);
 }

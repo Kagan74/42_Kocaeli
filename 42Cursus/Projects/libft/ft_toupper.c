@@ -1,36 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kkarakur <kkarakur@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/05 13:27:08 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/06 08:37:14 by kkarakur         ###   ########.fr       */
+/*   Created: 2023/07/06 11:16:07 by kkarakur          #+#    #+#             */
+/*   Updated: 2023/07/06 11:16:09 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+int	ft_toupper(int c)
 {
-	char	*destmov;
-	char	*srcmov;
-	size_t	i;
-
-	if (!dest && !src)
-		return (NULL);
-	destmov = (char *)dest;
-	srcmov = (char *)src;
-	i = 0;
-	if (destmov > srcmov)
-		while (n--)
-			destmov[n] = srcmov[n];
+	if (c >= 'a' && c <= 'z')
+		return (c -= 32);
 	else
-	{
-		while (n--)
-		{
-			destmov[i] = srcmov[i];
-			i++;
-		}
-	}
-	return (destmov);
+		return (c);
 }

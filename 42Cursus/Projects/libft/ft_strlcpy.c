@@ -1,36 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kkarakur <kkarakur@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/05 13:27:08 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/06 08:37:14 by kkarakur         ###   ########.fr       */
+/*   Created: 2023/07/06 09:37:32 by kkarakur          #+#    #+#             */
+/*   Updated: 2023/07/06 11:08:03 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	char	*destmov;
-	char	*srcmov;
 	size_t	i;
 
-	if (!dest && !src)
-		return (NULL);
-	destmov = (char *)dest;
-	srcmov = (char *)src;
 	i = 0;
-	if (destmov > srcmov)
-		while (n--)
-			destmov[n] = srcmov[n];
-	else
+	while (*src && i + 1 < dstsize)
 	{
-		while (n--)
-		{
-			destmov[i] = srcmov[i];
-			i++;
-		}
+		*dst++ = *src++;
+		++i;
 	}
-	return (destmov);
+	if (i < dstsize)
+		*dst = 0;
+	while (*src++)
+		++i;
+	return (i);
 }
