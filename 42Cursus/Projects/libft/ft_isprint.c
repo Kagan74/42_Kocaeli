@@ -6,9 +6,11 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 10:27:14 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/05 10:27:36 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/09 00:19:32 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(unsigned char x)
 {

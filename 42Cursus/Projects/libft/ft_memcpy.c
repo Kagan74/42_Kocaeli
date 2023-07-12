@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkarakur <kkarakur@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 13:06:18 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/05 13:28:20 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/09 01:51:00 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -26,5 +28,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		destcpy[i] = srccpy[i];
 		i++;
 	}
-	return (destcpy);
+	dest = destcpy;
+	return (dest);
 }

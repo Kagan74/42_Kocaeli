@@ -6,15 +6,15 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 10:15:50 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/05 10:19:09 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/09 00:19:35 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isalnum(unsigned char x)
 {
-	if ((x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z'))
-		return (1);
-	if (x >= '0' && x <= '9')
+	if (ft_isalpha(x) != 0 || ft_isdigit(x) != 0)
 		return (1);
 	return (0);
 }

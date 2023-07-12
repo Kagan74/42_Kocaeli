@@ -6,18 +6,15 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 14:53:59 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/05 10:04:11 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/09 00:19:34 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isalpha(unsigned char x)
 {
-	if (((x > 64) && (x < 91)) || ((x > 96) && (x < 123)))
-	{
+	if (((x >= 'a') && (x <= 'z')) || ((x >= 'A') && (x <= 'Z')))
 		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return (0);
 }

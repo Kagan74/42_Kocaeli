@@ -6,9 +6,11 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 17:02:07 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/05 10:36:19 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/09 00:24:24 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlen(const char *x)
 {
@@ -16,6 +18,6 @@ size_t	ft_strlen(const char *x)
 
 	i = 0;
 	while (x[i])
-		++i;
+		i++;
 	return (i);
 }

@@ -6,18 +6,15 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 15:51:31 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/05 10:10:22 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/09 00:19:33 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isdigit(unsigned char x)
 {
-	if (((x > 47) && (x < 58)))
-	{
+	if (((x >= '0') && (x <= '9')))
 		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return (0);
 }

@@ -3,34 +3,34 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkarakur <kkarakur@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 13:27:08 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/06 08:37:14 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/09 06:53:18 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char	*destmov;
 	char	*srcmov;
 	size_t	i;
 
 	if (!dest && !src)
 		return (NULL);
-	destmov = (char *)dest;
 	srcmov = (char *)src;
 	i = 0;
-	if (destmov > srcmov)
-		while (n--)
-			destmov[n] = srcmov[n];
+	if (dest > srcmov)
+		ft_memcpy(dest, src, n);
 	else
 	{
-		while (n--)
+		while (n)
 		{
-			destmov[i] = srcmov[i];
+			dest[i] = srcmov[i];
 			i++;
+			n--;
 		}
 	}
-	return (destmov);
+	return (dest);
 }
