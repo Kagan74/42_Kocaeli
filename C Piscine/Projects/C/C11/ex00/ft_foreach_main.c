@@ -1,5 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_foreach_main.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/17 17:11:48 by kkarakur          #+#    #+#             */
+/*   Updated: 2023/07/17 17:31:47 by kkarakur         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include <unistd.h>
+
 void	ft_putchar(char c)
 {
 	write(1, &c, 1);
@@ -25,7 +38,7 @@ void	ft_putnbr(int nb)
 		ft_putnbr(nb % 10);
 	}
 	else
-		 ft_putchar(nb + 48);
+		ft_putchar(nb + 48);
 }
 
 void	ft_foreach(int *tab, int length, void (*f)(int))
@@ -39,11 +52,12 @@ void	ft_foreach(int *tab, int length, void (*f)(int))
 		i++;
 	}
 }
-int main (void)
+
+int	main(void)
 {
-	int	i;
-	int *tab;
-	int length;
+	int		i;
+	int		*tab;
+	int		length;
 
 	length = 10;
 	tab = malloc(length * sizeof(int));

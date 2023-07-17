@@ -1,6 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sort_string_tab_main.c                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/17 17:12:38 by kkarakur          #+#    #+#             */
+/*   Updated: 2023/07/17 17:36:59 by kkarakur         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
+
 void	ft_swap(char **a, char **b)
 {
 	char	*tmp;
@@ -41,7 +54,7 @@ void	ft_sort_string_tab(char **tab)
 	}
 }
 
-int		main(void)
+int	main(void)
 {
 	int		index;
 	char	**tab;

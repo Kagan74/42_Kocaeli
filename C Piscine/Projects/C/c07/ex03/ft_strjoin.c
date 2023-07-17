@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkarakur <kkarakurt@student.42kocaeli.com  +#+  +:+       +#+        */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 12:36:52 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/02/25 18:31:54 by kkarakur         ###   ########.tr       */
+/*   Updated: 2023/07/17 17:17:05 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 		len += ft_strlen(strs[i]);
 		if (i + 1 != size)
 			len += ft_strlen(sep);
-			i++;
+		i++;
 	}
 	ret_val = malloc(sizeof(char) * (len + 1));
 	ret_val[len] = 0;

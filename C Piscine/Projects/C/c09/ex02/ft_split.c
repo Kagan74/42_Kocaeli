@@ -1,4 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/17 17:11:27 by kkarakur          #+#    #+#             */
+/*   Updated: 2023/07/17 17:29:29 by kkarakur         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
+
 int	check_separator(char c, char *charset)
 {
 	int	i;
@@ -83,18 +96,3 @@ char	**ft_split(char *str, char *charset)
 	strings[i] = 0;
 	return (strings);
 }
-
-/*#include <stdio.h>
-int	main(int argc, char **argv)
-{
-	int		index;
-	char	**split;
-	(void)	argc;
-	split = ft_split(argv[1], argv[2]);
-	index = 0;
-	while (split[index])
-	{
-		printf("%s\n", split[index]);
-		index++;
-	}
-}*/

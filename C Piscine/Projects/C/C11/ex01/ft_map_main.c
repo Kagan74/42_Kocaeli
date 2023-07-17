@@ -1,10 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_map_main.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/17 17:11:53 by kkarakur          #+#    #+#             */
+/*   Updated: 2023/07/17 17:32:45 by kkarakur         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include <stdio.h>
 
-int ft_mul(int a)
+int	ft_mul(int a)
 {
 	return (a * 2);
 }
+
 int	*ft_map(int *tab, int length, int (*f)(int))
 {
 	int	i;
@@ -23,12 +36,12 @@ int	*ft_map(int *tab, int length, int (*f)(int))
 	return (res);
 }
 
-int main (void)
+int	main(void)
 {
-	int	i;
-	int *tab;
-	int length;
-	int *res;
+	int		i;
+	int		*tab;
+	int		length;
+	int		*res;
 
 	tab = malloc(length * sizeof(int));
 	length = 10;
@@ -40,9 +53,9 @@ int main (void)
 	}
 	res = ft_map(tab, length, &ft_mul);
 	i = 0;
-	while ( i < length)
+	while (i < length)
 	{
-		printf( "%i", res[i]);
+		printf("%i", res[i]);
 		i++;
 	}
 }

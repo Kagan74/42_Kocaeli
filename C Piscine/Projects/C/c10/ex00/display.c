@@ -1,16 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   display.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/17 17:11:42 by kkarakur          #+#    #+#             */
+/*   Updated: 2023/07/17 17:30:38 by kkarakur         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 #include <fcntl.h>
 
 int	ft_display(char *file)
 {
-	int	r;
-	int	f;
+	int		r;
+	int		f;
 	char	a;
 
 	f = open(file, 0);
 	if (f == -1)
 		return (0);
-	while((r = read(f, &a, 1)))
+	while ((r == read(f, &a, 1)))
 	{
 		if (r == -1)
 			return (0);
@@ -19,7 +31,8 @@ int	ft_display(char *file)
 	close(f);
 	return (1);
 }
-int main(int argc, char **argv)
+
+int	main(int argc, char **argv)
 {
 	if (argc == 1)
 		write(2, "File name missing.\n", 19);
@@ -32,4 +45,3 @@ int main(int argc, char **argv)
 	}
 	return (0);
 }
-

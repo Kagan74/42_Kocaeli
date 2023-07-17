@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkarakur <kkarakurt@student.42kocaeli.com  +#+  +:+       +#+        */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/09 19:33:36 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/02/09 23:58:52 by kkarakur         ###   ########.tr       */
+/*   Updated: 2023/07/17 17:07:25 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_putnbr(int nb)
 	else if (nb < 0)
 	{
 		ft_putchar('-');
-	nb = -nb;
+		nb = -nb;
 		ft_putnbr(nb);
 	}
 	else if (nb > 9)

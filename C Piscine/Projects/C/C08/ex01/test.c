@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   test.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkarakur <kkarakur@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 12:52:01 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/05 12:52:02 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/17 17:25:31 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_boolean.h"
+
 void	ft_putstr(char *str)
 {
 	while (*str)

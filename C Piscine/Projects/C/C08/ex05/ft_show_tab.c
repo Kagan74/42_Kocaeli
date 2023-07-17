@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_show_tab.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkarakur <kkarakur@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 12:52:33 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/05 12:52:34 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/17 17:28:02 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	ft_putnbr(int nb)
 		ft_putnbr(nb % 10);
 	}
 	else
-		 ft_putchar(nb + 48);
+		ft_putchar(nb + 48);
 }
 
 void	ft_show_tab(struct s_stock_str *par)

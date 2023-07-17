@@ -1,6 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_advanced_sort_string_tab_main.c                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/17 17:12:52 by kkarakur          #+#    #+#             */
+/*   Updated: 2023/07/17 17:38:17 by kkarakur         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+
 void	ft_swap(char **a, char **b)
 {
 	char	*tmp;
@@ -29,7 +42,7 @@ void	ft_advanced_sort_string_tab(char **tab, int (*cmp)(char *, char *))
 	}
 }
 
-int		ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
 	while (*s1 != '\0' && (*s1 == *s2))
 	{
@@ -39,7 +52,7 @@ int		ft_strcmp(char *s1, char *s2)
 	return (*(unsigned char*)s1 - *(unsigned char*)s2);
 }
 
-int		main(void)
+int	main(void)
 {
 	int		index;
 	char	**tab;

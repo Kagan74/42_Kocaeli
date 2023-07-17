@@ -1,5 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   mainex04.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/17 17:12:10 by kkarakur          #+#    #+#             */
+/*   Updated: 2023/07/17 17:36:19 by kkarakur         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 #include <stdlib.h>
+
 int	ft_is_sort(int *tab, int length, int(*f)(int, int))
 {
 	int	i;
@@ -27,20 +40,18 @@ int	ft_is_sort(int *tab, int length, int(*f)(int, int))
 	return (1);
 }
 
-int        ft_tri(int a, int b)
+int	ft_tri(int a, int b)
 {
-    return (a - b);
+	return (a - b);
 }
 
-int        main(void)
+int	main(void)
 {
-    static int    tabx[] = { 7, 6, 6, 6, 5, 5, 3, 2, 2, 1, 1, 0, 0 };
-    int            index;
-    int            *tab;
-    int            length;
+	static int	tabx[] = {7, 6, 6, 6, 5, 5, 3, 2, 2, 1, 1, 0, 0};
+	int			index;
+	int			*tab;
+	int			length;
 
-    length = 10;
-
-    printf("%d\n", ft_is_sort(tabx, length, &ft_tri));
-   
+	length = 10;
+	printf("%d\n", ft_is_sort(tabx, length, &ft_tri));
 }

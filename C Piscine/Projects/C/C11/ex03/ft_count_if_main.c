@@ -1,5 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_count_if_main.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/17 17:12:02 by kkarakur          #+#    #+#             */
+/*   Updated: 2023/07/17 17:34:08 by kkarakur         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 #include <stdlib.h>
+
 int	ft_count_if(char **tab, int length, int (*f)(char*))
 {
 	int	i;
@@ -15,16 +28,18 @@ int	ft_count_if(char **tab, int length, int (*f)(char*))
 	}
 	return (count);
 }
-int ft(char *str)
+
+int	ft(char *str)
 {
 	if (*str == 'A')
 		return (1);
 	return (0);
 }
-int main (void)
+
+int	main(void)
 {
-	char **array;
-	int	i;
+	char	**array;
+	int		i;
 
 	array = malloc(3 * sizeof(char *));
 	array[0] = "A";

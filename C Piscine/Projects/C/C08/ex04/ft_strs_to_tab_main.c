@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strs_to_tab_main.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkarakur <kkarakur@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 12:52:23 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/05 12:52:25 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/17 17:10:19 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

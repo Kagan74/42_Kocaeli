@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkarakur <kkarakurt@student.42kocaeli.com  +#+  +:+       +#+        */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/09 14:04:18 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/02/10 00:05:53 by kkarakur         ###   ########.tr       */
+/*   Updated: 2023/07/17 17:07:19 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_print_comb2(void)
 	a = 0;
 	while (a <= 98)
 	{
-	b = a + 1;
+		b = a + 1;
 		while (b <= 99)
 		{
 			ft_putchar(a / 10 + '0');
@@ -35,8 +35,8 @@ void	ft_print_comb2(void)
 			ft_putchar(b % 10 + '0');
 			if (a != 98)
 				write(1, ", ", 2);
-		b++;
+			b++;
 		}
-	a++;
+		a++;
 	}
 }
