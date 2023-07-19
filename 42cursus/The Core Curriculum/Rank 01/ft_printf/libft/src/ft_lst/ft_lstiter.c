@@ -1,24 +1,24 @@
-/*
-*	DESCRIPTION
-*	Iterates the list ’lst’ and applies the function ’f’ to the content of each 
-*	element.
-*	PARAMETERS
-*	#1. The adress of a pointer to an element.
-*	#2. The adress of the function used to iterate on the list.
-*	RETURN VALUES
-*	-
-*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/19 13:09:09 by kkarakur          #+#    #+#             */
+/*   Updated: 2023/07/19 13:12:27 by kkarakur         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (f)
+	if (!f)
+		return ;
+	while (lst)
 	{
-		while (lst)
-		{
-			f(lst->content);
-			lst = lst->next;
-		}
+		(*f)(lst->content);
+		lst = lst->next;
 	}
 }

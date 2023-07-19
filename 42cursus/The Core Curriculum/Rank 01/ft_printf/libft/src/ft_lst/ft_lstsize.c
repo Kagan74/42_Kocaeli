@@ -1,23 +1,26 @@
-/*
-*	DESCRIPTION
-*	Counts the number of elements in a list.
-*	PARAMETERS
-*	#1. The beginning of the list.
-*	RETURN VALUES
-*	Length of the list.
-*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/19 13:09:19 by kkarakur          #+#    #+#             */
+/*   Updated: 2023/07/19 13:09:20 by kkarakur         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
 int	ft_lstsize(t_list *lst)
 {
-	int	size;
+	int	i;
 
-	size = 0;
-	while (lst)
+	i = 0;
+	while (lst != NULL)
 	{
-		lst = lst->next;
-		size++;
+		lst = lst -> next;
+		i++;
 	}
-	return (size);
+	return (i);
 }
