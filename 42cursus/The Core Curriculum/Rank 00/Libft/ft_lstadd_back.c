@@ -1,27 +1,26 @@
-/*
-*	DESCRIPTION
-*	Adds the element ’new’ at the end of the list.
-*	PARAMETERS
-*	#1. The address of a pointer to the first link of a list.
-*	#2. The address of a pointer to the element to be added to the list.
-*	RETURN VALUES
-*	-
-*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/19 13:08:50 by kkarakur          #+#    #+#             */
+/*   Updated: 2023/07/19 13:08:51 by kkarakur         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list	*aux_lst;
+	t_list	*temp;
 
-	if (new)
+	if (!*lst)
+		*lst = new;
+	else
 	{
-		if (!*lst)
-		{
-			*lst = new;
-			return ;
-		}
-		aux_lst = ft_lstlast(*lst);
-		aux_lst->next = new;
+		temp = ft_lstlast(*lst);
+		temp->next = new;
 	}
 }

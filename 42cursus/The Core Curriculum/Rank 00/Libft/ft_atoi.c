@@ -6,11 +6,9 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 14:55:19 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/17 15:42:44 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/19 13:09:39 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

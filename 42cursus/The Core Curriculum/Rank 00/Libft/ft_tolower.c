@@ -6,11 +6,9 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/06 11:17:34 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/09 06:55:18 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/19 13:17:03 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_tolower(int c)
 {

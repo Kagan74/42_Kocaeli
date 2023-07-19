@@ -6,11 +6,9 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 14:53:59 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/15 14:36:48 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/19 13:10:30 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isalpha(int x)
 {
