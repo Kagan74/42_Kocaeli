@@ -6,15 +6,15 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/16 17:46:38 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/19 13:15:12 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/22 14:38:06 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *str, int find)
+char	*ft_strchr(const char *s, int c)
 {
-	while (*str && (char)find != *str)
-		str++;
-	if ((char)find == *str)
-		return ((char *)str);
+	while (*s && (char)c != *s)
+		s++;
+	if ((char)c == *s)
+		return ((char *)s);
 	return (0);
 }

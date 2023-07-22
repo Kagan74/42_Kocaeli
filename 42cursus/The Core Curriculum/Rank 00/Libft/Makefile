@@ -10,12 +10,7 @@ SRC		=	ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c\
 			ft_strnstr.c ft_strrchr.c ft_strjoin.c\
 			ft_tolower.c ft_toupper.c ft_strlcat.c
 
-B 		= 	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c\
-			ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
-
 OBJ		=	$(SRC:.c=.o)
-
-B_OBJ 	=	$(B:.c=.o)
 
 CC		=	gcc
 
@@ -25,9 +20,6 @@ RM		=	rm -f
 
 all		:	$(NAME)
 
-
-bonus	:	$(B_OBJ)
-			ar rcs $(NAME) $(B_OBJ)
 
 $(NAME)	:	$(OBJ)
 			ar rcs $(NAME) $(OBJ)

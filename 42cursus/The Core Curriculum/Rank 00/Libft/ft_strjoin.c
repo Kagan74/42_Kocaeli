@@ -6,13 +6,13 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/10 19:32:22 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/17 12:12:32 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/22 14:39:56 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(const char *s1, const char *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	int		sizetotal;
 	char	*res;

@@ -6,13 +6,13 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 15:51:31 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/19 13:11:02 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/22 13:48:58 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int x)
+int	ft_isdigit(int c)
 {
-	if ((x >= '0' && x <= '9'))
+	if ((c >= '0' && c <= '9'))
 		return (1);
 	return (0);
 }

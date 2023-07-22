@@ -6,13 +6,13 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 16:00:16 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/19 13:10:57 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/22 13:49:21 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int x)
+int	ft_isascii(int c)
 {
-	if ((x >= 0 && x <= 127))
+	if ((c >= 0 && c <= 127))
 		return (1);
 	return (0);
 }

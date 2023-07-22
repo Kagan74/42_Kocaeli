@@ -6,18 +6,18 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/16 16:08:31 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/19 13:16:24 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/22 14:42:15 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+size_t	ft_strlen(const char *s)
 {
 	size_t	len;
 
 	len = 0;
-	while (str[len])
+	while (s[len])
 	{
 		len++;
 	}

@@ -6,20 +6,20 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 13:27:08 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/17 12:09:27 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/22 14:33:33 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *sour, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	if (!dest && !sour)
+	if (!dst && !src)
 		return (0);
-	if (dest < sour)
-		ft_memcpy(dest, sour, len);
-	else if (dest > sour)
+	if (dst < src)
+		ft_memcpy(dst, src, len);
+	else if (dst > src)
 		while (len--)
-			*((unsigned char *)(dest + len)) = *((unsigned char *)(sour + len));
-	return (dest);
+			*((unsigned char *)(dst + len)) = *((unsigned char *)(src + len));
+	return (dst);
 }

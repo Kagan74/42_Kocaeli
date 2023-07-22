@@ -6,13 +6,13 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 10:27:14 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/19 13:11:05 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/22 13:49:33 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int x)
+int	ft_isprint(int c)
 {
-	if (x >= 32 && x < 127)
+	if (c >= 32 && c < 127)
 		return (1);
 	return (0);
 }

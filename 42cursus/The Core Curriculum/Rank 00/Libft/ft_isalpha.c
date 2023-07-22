@@ -6,13 +6,13 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 14:53:59 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/19 13:10:30 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/22 13:48:43 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int x)
+int	ft_isalpha(int c)
 {
-	if ((x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z'))
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	return (0);
 }

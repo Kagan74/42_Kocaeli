@@ -6,21 +6,21 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/16 15:57:10 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/07/17 12:16:38 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/07/22 14:44:37 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int find)
+char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
-	i = (int)ft_strlen(str);
+	i = (int)ft_strlen(s);
 	while (i >= 0)
 	{
-		if (*(str + i) == (char)find)
-			return ((char *)str + i);
+		if (*(s + i) == (char)c)
+			return ((char *)s + i);
 		i--;
 	}
 	return (0);
