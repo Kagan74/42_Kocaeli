@@ -6,7 +6,7 @@
 /*   By: kkarakur <kkarakur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/11 10:01:08 by kkarakur          #+#    #+#             */
-/*   Updated: 2023/08/11 12:04:25 by kkarakur         ###   ########.fr       */
+/*   Updated: 2023/08/16 14:18:55 by kkarakur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_printf(const char *str, ...)
 	counter = -1;
 	leng = 0;
 	va_start(args, str);
-	while (str[++counter] != '\0')
+	while (str[++counter])
 	{
 		if (str[counter] == '%' && ft_check(str[counter + 1]))
 		{
